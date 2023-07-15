@@ -15,7 +15,7 @@ function App() {
    const location = useLocation();
 
    useEffect(() => {
-      if (location.pathname === "" || location.pathname === "/" || location.pathname === "*" ) {
+      if (location.pathname === "/myweb" || location.pathname === "/" || location.pathname === "*" ) {
          naviget("/login")
       }
    }, [])
