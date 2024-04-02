@@ -32,21 +32,21 @@ const  navigate = useNavigate()
         else{
         
         
-          var data = {
-            to_email: userdata.userId,
-            otp: `verify your email ${otp}`
-        };
+        //   var data = {
+        //     to_email: userdata.userId,
+        //     otp: `verify your email ${otp}`
+        // };
 
-        let userid = "LuvyT0-TVop9UcA5z";
-        let serviceid = "service_64x53ka";
-        let templateid = "template_3rowx0w"
+        // let userid = "LuvyT0-TVop9UcA5z";
+        // let serviceid = "service_64x53ka";
+        // let templateid = "template_3rowx0w"
 
-        emailjs.send(serviceid, templateid, data, userid).then(
-            function (response) {
-                console.log(response.status, response.text);
-                console.log(response);
-                navigate('/otp')
-                localStorage.setItem('Otp', otp)
+        // emailjs.send(serviceid, templateid, data, userid).then(
+        //     function (response) {
+        //         console.log(response.status, response.text);
+        //         console.log(response);
+                navigate('/login')
+                // localStorage.setItem('Otp', otp)
                 localStorage.setItem('Username', userdata.username)
                 localStorage.setItem('UserId', userdata.userId)
                 localStorage.setItem('Pass', userdata.pass)
