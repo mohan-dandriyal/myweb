@@ -53,7 +53,7 @@ export const Login = () => {
                         <button type='button' onClick={hendleUser} className="btn mt-3">Login</button>
                     </form>
                     <div className="text-center fs-6">
-                        <Link to='/forget'>Forget password?</Link> or <Link to="/register">Sign up</Link>
+{/*                         <Link to='/forget'>Forget password?</Link> or <Link to="/register">Sign up</Link> */}
                     </div>
                 </div>
             </div>
